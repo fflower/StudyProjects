@@ -1,0 +1,151 @@
+<!--The document-type declaration setting the standards as XHTML 1.0 applying the syntax rules of XHTML 1.0 Strict and specifying the language as English was typed below-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- The opening <html> tag  was extended by providing  the information for the browser to await for HTML code shown as XHTML and that the document behaves according to the XML namespaces . It also gives the URL for W3C resource -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Manage News OURC Admin</title>
+<!-- The metadata element was included to inform the browser that the document is text shown as html and about the character set utf-8  for interpreting the documents's characters -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- The metadata element added  to optimise the web page for search engine giving the terms and the keywords which can be typed by the user  to choose that site over another -->
+<meta name="keywords" content="Open University Running Club, Admin Tasks Running Club, Milton Keyes, Running Clubs Admin" />
+<meta name="description" content="Open University Running Club, Milton Keyes, Admin Tasks, Managing Admin, Open University" />
+<link href="style.css" rel="stylesheet" type= "text/css" /> 
+<!--The special styel sheets included when the user  and browses the web with Internet Explorer 9-->
+<!--[if lt IE 8]>
+		<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ <!-- link element extended to present the alternative text only presentation of the document . The alternative version will be shown when a user agent identifies itself as aural, braille or tty.-->
+<link rel="text-only" href="textonly.html" title="Text-only version" media="aural, braille, tty" />                                   
+</head>
+<body>
+<!-- The container was added to represent the whole page -->
+<div id="container">
+<!-- The banner was added to create the header with possibilities of loging out and searching-->
+  <div id="banner">  
+    <h2>OURC Administration Panel</h2>
+    <ul id="bannerlist">                  
+         <li>Member's Name/</li>      
+         <li id="log"><a href="loginpage.html">Log out</a></li>       
+        <!--  The search box was added to give the user possibility for typing the search queries-->     
+         <li><form name="srchform" id="srchform" method="post" action="http://css2.open.ac.uk/search/search.aspx">
+          <input name="txtSearchTerms" type="text" class="search_input" size="14" maxlength="100" title="Search Accesskey 4" accesskey="4" tabindex="23"/>
+          <input type="submit" class="button_p_sm" value="Search" title="Submit button Accesskey b" accesskey="b" tabindex="24" />
+       </form> 
+       </li>
+       <!-- The log out link added to redirect to login page-->      
+    </ul>      
+  </div>     
+ <!--The navigation added at the top to access the needed pages --> 
+  <div id="navcontainer">
+    <ul id="navlist">  
+     <!-- The tab order was added to allow the keyboard users to navigate through the website. Some elements include the accesskey attribute to give the alternative access to them-->    
+     <li><a href="index.html" title="Home Accesskey 1" accesskey="1" tabindex="1">Home</a></li>
+      <li><a href="events.html" title="Manage Events Accesskey E" accesskey="E" tabindex="2" >Manage Events</a></li>
+      <li><a href="members.html" title="Manage Members and Results Accesskey M" accesskey="M" tabindex="3" >Manage Members &amp; Results</a></li>
+      <!-- attribute id added to underline the current page-->
+      <li><a href="" id="current" title="Manage News Accesskey N" accesskey="N" tabindex="4" >Manage News</a></li>
+      <li><a href="mailing.html" title="Manage Mailing Accesskey L" accesskey="L" tabindex="5" >Manage Mailings</a></li>      
+    </ul>
+  </div>      
+ <div id="content">
+ <!-- the side navigation added for choosing the task to do-->
+  <div id="sidenav">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="events.html" title="Add Race Event Accesskey d" accesskey="d" tabindex="16">Add Race Event</a></li>
+        <li><a href="events.html" title="Add Social Event Accesskey s" accesskey="s" tabindex="17">Add Social Event</a></li>
+        <li><a href="events.html" title="Edit Race Event Accesskey r" accesskey="r" tabindex="18">Edit Race Event</a></li>
+        <li><a href="members.html" title="Add New Member Accesskey m" accesskey="m" tabindex="19">Add New Member</a></li>
+        <li><a href="members.html" title="Delete Member Accesskey d" accesskey="d" tabindex="20">Delete Member</a></li>
+        <li><a href="members.html" title="Edit Race Results Accesskey c" accesskey="c" tabindex="21">Edit Race Results</a></li>
+        <li><a href="mailing.html" title="Send Email Accesskey n" accesskey="n" tabindex="22">Send Email</a></li>        
+      </ul>
+   </div> 
+ 
+ 
+ <div>
+      <!-- The form created with the name 'newsform' method 'post' and appropriate action -->
+      <form id="newsform" name="newsform" method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Add News Item</h2>			
+		</div>	
+            <!--The input forms and labels added to show the ID of the user, type the dates for first and last showing and text of the news item -->        
+			<ul >                       
+			  <li id="input1" >
+		         <label class="description" for="in1">Your ID:</label>
+		         <div>
+                 	<p id="in1">Derived from log-on creditials</p>		       
+		         </div> 
+		       </li>
+              <li id="input2" >
+		        <label class="description" for="in2_1">Date for first showing</label>
+                <div>
+		        <span>
+			    <input id="in2_1" name="in2_1" class="text" size="2" maxlength="2" value="" type="text" title="Day Accesskey D" accesskey="D" tabindex="6" /> /
+			     <label for="in2_1">DD</label>
+		       </span>
+		       <span>
+			   <input id="in2_2" name="in2_2" class="text" size="2" maxlength="2" value="" type="text" title="Month Accesskey O" accesskey="O" tabindex="7" /> /
+			    <label for="in2_2">MM</label>
+		      </span>
+		      <span>
+	 		   <input id="in2_3" name="in2_3" class="text" size="4" maxlength="4" value="" type="text" title="Year Accesskey y" accesskey="y" tabindex="8" />
+			   <label for="in2_3">YYYY</label>
+		     </span>
+             </div>
+			 </li>
+             
+             <li id="input3" >
+		        <label class="description" for="in3_1">Date for last showing</label>
+                <div>
+		        <span>
+			    <input id="in3_1" name="in3_1" class="text" size="2" maxlength="2" value="" type="text" title="Day Accesskey d" accesskey="d" tabindex="9" /> /
+			     <label for="in3_1">DD</label>
+		       </span>
+		       <span>
+			   <input id="in3_2" name="in3_2" class="text" size="2" maxlength="2" value="" type="text" title="Month Accesskey o" accesskey="o" tabindex="10" /> /
+			    <label for="in3_2">MM</label>
+		      </span>
+		      <span>
+	 		   <input id="in3_3" name="in3_3" class="text" size="4" maxlength="4" value="" type="text" title="Year Accesskey e" accesskey="e" tabindex="11" />
+			   <label for="in3_3">YYYY</label>
+		     </span>
+             </div>
+			 </li>
+             
+              <li id="input4" >
+		         <label class="description" for="in4">Text (maximum 300 words)</label>
+		         <div>
+                 	<textarea id="in4" name="in4" cols="65" rows="36" class="textarea medium" title="Text Accesskey T" accesskey="T" tabindex="12"></textarea>		       
+		         </div> 
+		        </li>	             
+             <!-- The buttons added to submit or clear the changes to the database-->  	
+			 <li class="buttons">			  		    
+			  <input id="saveNewsForm" class="button_text" type="submit" name="submit" value="Submit" title="Submit Accesskey S" accesskey="S" tabindex="13" />
+             </li>
+             <li class="buttons">			  		    
+			  <input id="clearNewsForm" class="button_text" type="reset" name="Clear" value="Clear" title="Clear Accesskey C" accesskey="C" tabindex="14" />
+             </li>
+             <li id="inf7" ><a href="newstable.html" title="Show News Table Accesskey N" accesskey="N" tabindex="15">Show News Table</a>
+             </li>
+		 </ul>
+         <!-- the hidden field added to track the current user with the name 'sessionID' and the value given  below-->
+         <input type="hidden" name="sessionID" value="ABCDEF01-ABCD-ABCD-ABDC-ABCDEF012345" />
+		</form>    
+       </div>
+
+     <div id="raceimage3"><img src="images/runnersimage.jpg"  height="380" width="170"  alt="Open University Running Club Runner"  />
+     </div>  
+        
+           
+  </div> 
+<!-- The footer was included-->  
+  <div id="footer"> &copy; 2012 OURC Admin</div>
+ </div> 
+
+</body>
+</html>

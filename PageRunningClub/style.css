@@ -1,0 +1,270 @@
+body {
+margin : 0;
+padding : 0;
+font : 73% verdana, "Trebuchet MS", arial, tahoma, sans-serif;
+line-height : 1.7em;
+color : #000000;
+background:url(images/gradient1.png) repeat-x;
+}
+
+label 
+{
+font-size:11px; 
+font-weight:bold; 
+color:#000000;
+}
+
+
+#container {
+width : 920px;
+margin-bottom:auto;
+margin-left : auto;
+margin-right : auto;
+padding : 0;
+color : #666;
+background : #fff;
+border: 1px solid #000000;
+}
+			/*TOP BANNER*/
+#banner {
+height : 70px;
+padding : 0;
+margin : 0;
+color : #666;
+background:#C8A750;
+}
+
+#banner h2{
+margin-top : 0;
+padding : 20px 0 0 20px;
+font-size : 23px;
+letter-spacing: 2px;
+color : #000000;
+background : inherit;}
+
+#bannerlist{
+text-align :left;
+letter-spacing : 2px;
+position:absolute;
+top:30px;
+left: 640px;
+}
+
+#bannerlist li {
+list-style : none;
+margin : 0;
+display : inline;
+color:#000000;
+}
+
+
+#srchform{
+position:relative;
+top:-20px;
+left:220px;
+}
+
+			/*TOP MENU*/
+#navlist {
+padding : 3px 0;
+margin : 0;
+text-align : left;
+letter-spacing : 2px;
+border : 0px solid #eee;
+background : #FFFFFF;
+}
+
+#navlist li {
+list-style : none;
+margin : 0;
+display : inline;
+}
+
+#navlist li a {
+padding : 6px 0.5em;
+margin-left : 3px;
+color : #000000;
+background : #FFFFFF;
+text-decoration : none;
+}
+
+#navlist li a:link, #navlist li a:visited {
+color : #000000;
+background : #FFFFFF;
+}
+
+#navlist li a:hover, #navlist li a#current {
+color : #000000;
+background : #C8A750;
+}
+
+			/*MAIN CONTENT*/
+#content {
+padding : 5px;
+margin-left : 20px;
+margin-bottom : 0;
+color : #666;
+background : #fff;}
+
+#content h1{
+color:#000000;
+text-align: center;
+}
+			/*SIDEBAR*/
+#sidenav {
+float : left;
+width : 170px;
+margin : 0 5px 10px 0;
+border: 1px solid #000000;
+position:absolute;
+top:150px;
+left: 200px;
+line-height:30px;
+background: #EFEBD6;
+}
+
+#sidenav h1{
+margin: 10px 30px 0 0; 
+padding-left: 30px;
+font : bold verdana, "Trebuchet MS", arial, tahoma, sans-serif;
+font-size:14px;
+letter-spacing : 2px;
+color : #000000;
+
+}
+			/*SIDEBAR LINKS*/
+#sidenav ul li {
+margin : 0 10px 0 0;
+font-size: 12px;
+padding-bottom : 20px;
+list-style: none;
+color : #000000;
+}
+
+#sidenav a {
+text-decoration : none;
+color : #000000;
+font-weight: normal;
+}
+
+#sidenav a:hover {
+color : #000000;
+background : #C8A750;
+}
+
+        /* FORMS AND THEIR ELEMENTS */
+#newsform{
+width:610px;
+height: 830px;
+margin-left :auto;
+margin-right : 0;
+margin-bottom: 90px;
+padding-bottom : 40px;
+color : #666;
+background :#EFEBD6;
+border: 1px solid #000000;
+position:relative;
+top:50px;
+left:-50px;
+}
+
+#newsform #inf7{
+margin-top:0px;
+margin-left: 270px;
+}
+
+.description_form h2{
+    margin:10px 0 0 0;
+	text-align: center;
+	text-decoration:none;	
+    color:#000000;
+}
+
+#newsform ul
+{
+	font-size:100%;
+	list-style-type:none;
+    text-decoration:none;
+	margin:0 ;
+	padding:0;
+	width:100%;
+}
+
+#newsform li
+{
+	display:block;
+	margin:0 0 0 30px;
+	padding:4px 0 2px 9px;
+	position:relative;
+}
+ 
+ 
+ #newsform #in1{
+ color:#000000;
+ margin-bottom: 10px;
+ margin-top:0; 
+ }
+ 
+ #newsform #input2{
+ margin-bottom: 10px; 
+ padding-right: 10px;
+ }
+ 
+  
+ #newsform #input3{
+ margin-bottom: 10px; 
+ margin-top:-60px;
+ margin-left: 290px;
+ }
+ 
+ #newsform #in4{
+  margin-bottom: 10px; 
+ }
+ 
+#newsform #saveNewsForm{
+ margin-left: 390px;
+ margin-top: 0;
+ }
+ 
+ #newsform #clearNewsForm{
+ float:right;
+ margin-right: 40px;
+ margin-top: -30px;
+ }  
+ 
+ 
+
+			/*FOOTER*/
+#footer {
+height: 50px;
+width: 850px;
+text-align : right;
+color : #000000;
+background : url(images/BarWideBlack.jpg) repeat-x;
+margin-left: 35px;
+}
+		
+
+			/*LINKS*/
+a {
+text-decoration : underline;
+color : #000000;
+background : inherit;
+}
+a:hover {
+text-decoration : none;
+color : #003366;
+background : inherit;
+}
+
+	       /*IMAGES*/
+
+#raceimage3{
+position:absolute;
+top: 630px; 
+left:200px;
+}
+
+
+
+  

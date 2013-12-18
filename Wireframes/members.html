@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Manage Members OURC Admin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="display.css" rel="stylesheet" type= "text/css" />                                     
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <h2>OURC Administration Panel</h2>
+    <ul id="bannerlist">
+       <li>Member's Name/</li>      
+      <li id="log"><a href="index.html">Log out</a></li>    
+      <li><input type="text" title="Search" /></li>
+      <li><a href="">Search</a></li>       
+    </ul>      
+  </div>   
+  <div id="navcontainer">
+    <ul id="navlist">      
+     <li><a href="home.html">Home</a></li>
+      <li><a href="events.html">Manage Events</a></li>
+      <li><a href=""id="current">Manage Members &amp; Results</a></li> 
+      <li><a href="news.html">Manage News</a></li>
+      <li><a href="mailing.html">Manage Mailings</a></li>      
+    </ul>
+  </div>     
+  <div id="content"> 
+  <div id="sidenav">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="events.html">Add Race Event</a></li>
+        <li><a href="events.html">Add Social Event</a></li>
+        <li><a href="events.html">Edit Race Event</a></li>
+        <li><a href="mailing.html">Send Email</a></li>
+        <li><a href="news.html">Add News Item</a></li>
+      </ul>
+    </div>   
+     
+  <div> 
+	   <form id="addmemberform" class=""  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+	   <div class="description_form">
+			<h2>Add New Member</h2>			
+		</div>					
+			<ul >		
+				<li id="element1" >
+		         <label class="description" for="e1">Full Name *</label>
+		         <div>
+                 	<input id="e1" name="e1" class="text medium" type="text" maxlength="255" value=""/> 	       
+		         </div> 
+		        </li>		
+                <li id="element2" >
+		         <label class="description" for="e2">Email Address *</label>
+		         <div>
+			   	    <input id="e2" name="e2" class="text medium" type="text" maxlength="255" value=""/>
+		         </div> 
+		        </li>	
+                <li id="element3" >
+		         <label class="description" for="e3">Confirm Email Address *</label>
+		         <div>
+			   	    <input id="e3" name="e3" class="text medium" type="text" maxlength="255" value=""/>
+		         </div> 
+		        </li>
+			    <li class="buttons">			  		    
+			      <input id="saveMemberForm" class="button_text" type="submit" name="submit" value="Submit" />
+		         </li>
+                 <li class="buttons">			  		    
+			     <input id="clearMemberForm" class="button_text" type="reset" name="clear" value="Clear" />
+		         </li>
+                <li id="inf"><a href="membertable.html">Show Membership Table</a>
+                </li>                 
+		 </ul>
+		 </form> 
+  </div> 
+  
+  <div>
+      <form id="deletememberform" class=""  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Delete Member </h2>
+            <p id="desc">Members who has not engaged with the club for more than 24 months.</p>			
+		</div>					
+			<ul >                	            
+				<li id="element5" >                 
+		         <label class="description" for="e5">Full Name *</label>
+                <div>
+		        <select class="select medium" id="e5" name="e5"> 
+			      <option value="" selected="selected"></option>
+                  <option value="1" >Aliquam justo nunc</option>
+                  <option value="2" >Aliquam justo nunc</option>
+                  <option value="3" >Aliquam justo nunc</option>
+		       </select>
+		       </div>
+              </li>	
+               <li class="buttons">			  		    
+			    <input id="deleteMemberForm" class="button_text" type="submit" name="submit" value="Update" />
+		       </li>
+               <li class="buttons">			  		    
+			     <input id="clearDeleteMemberForm" class="button_text" type="reset" name="clear" value="Clear" />
+		       </li>
+               <li id="inf2"><a href="membertable.html">Show Membership Table</a>
+                </li>
+		 </ul>
+		</form>  
+  </div> 
+  <div>
+      <form id="raceResultsform" class="appnitro"  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Edit Race Results</h2>			
+		</div>					
+			<ul > 
+              <li id="element6" >
+		         <label class="description" for="e6">Choose Race *</label>
+                <div>
+		        <select class="select medium" id="e6" name="e6"> 
+			      <option value="" selected="selected"></option>
+                  <option value="1" >Aliquam justo nunc</option>
+                  <option value="2" >Aliquam justo nunc</option>
+                  <option value="3" >Aliquam justo nunc</option>
+		       </select>
+		       </div>
+              </li>               
+			  <li id="element7" >
+		         <label class="description" for="e7">Choose Runner</label>
+		         <div>
+                 <select class="select medium" id="e7" name="e7"> 
+			      <option value="" selected="selected"></option>
+                  <option value="1" >Aliquam justo nunc</option>
+                  <option value="2" >Aliquam justo nunc</option>
+                  <option value="3" >Aliquam justo nunc</option>
+		         </select>	       
+		         </div> 
+		       </li>		
+               <li id="element8" >
+		        <label class="description" for="e8">Finishing time</label>
+		        <div>
+			     <input id="e8" name="e8" class="text" size="2" maxlength="2" value="" type="text">  	
+		        </div> 
+		       </li>		
+               <li id="element9" >
+		        <label class="description" for="e9">Finishing Position</label>
+		        <div>
+			     <input id="e9" name="e9" class="text" size="2" maxlength="2" value="" type="text" />  	
+		        </div> 
+		       </li>
+                              	
+			 <li class="buttons">			  		    
+			  <input id="saveRaceForm" class="button_text" type="submit" name="submit" value="Update" />
+		    </li>
+            <li class="buttons">			  		    
+			  <input id="clearRaceForm" class="button_text" type="reset" name="reset" value="Clear" />
+		    </li>
+            <li id="inf3"><a href="resultstable.html">Show Results Table</a>
+            </li>
+		 </ul>
+		</form>    
+       </div>
+       
+       <div id="raceimage2"><img src="images/imageSquare.jpg"  height="270" width="270"  alt="Running Club Race" />
+        </div>  
+           
+    </div>
+  <div id="footer"> &copy; 2012 OURC Admin</div>
+</div> 
+
+</body>
+</html>

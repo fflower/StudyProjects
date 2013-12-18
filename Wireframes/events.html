@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Manage Events OURC Admin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="display.css" rel="stylesheet" type= "text/css" />                                     
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <h2>OURC Administration Panel</h2>
+    <ul id="bannerlist">
+       <li>Member's Name/</li>      
+      <li id="log"><a href="index.html">Log out</a></li>    
+      <li><input type="text" title="Search" /></li>
+      <li><a href="">Search</a></li>       
+    </ul>   
+  </div>   
+  <div id="navcontainer">
+    <ul id="navlist">      
+     <li><a href="home.html">Home</a></li>
+      <li><a href="" id="current">Manage Events</a></li>
+      <li><a href="members.html">Manage Members &amp; Results</a></li>
+      <li><a href="news.html">Manage News</a></li>
+      <li><a href="mailing.html">Manage Mailings</a></li>      
+    </ul>
+  </div>     
+  <div id="content"> 
+  <div id="sidenav">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="members.html">Add Member</a></li>
+        <li><a href="members.html">Delete Member</a></li>
+        <li><a href="news.html">Add News Item</a></li>
+        <li><a href="members.html">Edit Race Results</a></li>
+        <li><a href="mailing.html">Send Email</a></li>
+      </ul>
+    </div>
+   
+  <div> 
+	   <form id="addraceeventform" class="addraceeventform"  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+	   <div class="description_form">
+			<h2>Add Race Event</h2>			
+		</div>					
+			<ul >		
+				<li id="item1" >
+		         <label class="description" for="i1">Title * </label>
+		         <div>
+                 	<textarea id="i1" name="i1" class="textarea medium" rows="3" cols="27"></textarea>		       
+		         </div> 
+		        </li>		
+                <li id="item2" >
+		        <label class="description" for="i2">Location * </label>
+		        <div>
+			        <textarea id="i2" name="i2" class="textarea medium" rows="4" cols="27"></textarea>	
+		        </div> 
+		         </li>		
+                <li id="item3" >
+		        <label class="description" for="i3_1">Date * </label>
+                <div>
+		        <span>
+			    <input id="i3_1" name="i3_1" class="text" size="2" maxlength="2" value="" type="text" /> /
+			     <label for="i3_1">DD</label>
+		       </span>
+		       <span>
+			   <input id="i3_2" name="i3_2" class="text" size="2" maxlength="2" value="" type="text" /> /
+			    <label for="i3_2">MM</label>
+		      </span>
+		      <span>
+	 		   <input id="i3_3" name="i3_3" class="text" size="4" maxlength="4" value="" type="text" />
+			   <label for="i3_3">YYYY</label>
+		     </span>
+             </div>
+			   </li>		
+               <li id="item4" >
+		       <label class="description" for="i4">Google Map Reference </label>
+		      <div>
+			   <textarea id="i4" name="i4" class="textarea medium" rows="7" cols="27">https://</textarea>	
+		     </div> 
+		     </li>		
+			 <li class="buttons">			  		    
+			  <input id="saveRaceEventsForm" class="button_text" type="submit" name="submit" value="Submit" />
+		    </li>
+             <li class="buttons">			  		    
+			      <input id="clearRaceEventsForm" class="button_text" type="reset" name="reset" value="Clear" />
+		     </li>
+             <li id="inf4"><a href="eventstable.html">Show Events Table</a>
+             </li>              
+            </ul>
+		 </form> 
+</div> 
+  
+  <div>
+      <form id="addsocialeventform" name="addsocialeventform"  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Add Social Event</h2>			
+		</div>					
+			<ul >                	            
+				<li id="item5" >
+		         <label class="description" for="i5">Title * </label>
+		         <div>
+                 	<textarea id="i5" name="i5" class="textarea medium" rows="3" cols="27"></textarea>		       
+		         </div> 
+		        </li>		
+                <li id="item6" >
+		        <label class="description" for="i6">Location *</label>
+		        <div>
+			        <textarea id="i6" name="i6" class="textarea medium" rows="4" cols="27"></textarea>	
+		        </div> 
+		         </li>		
+                <li id="item7" >
+		        <label class="description" for="i7_1">Date * </label>
+                <div>
+		        <span>
+			    <input id="i7_1" name="i7_1" class="text" size="2" maxlength="2" value="" type="text" /> /
+			     <label for="i7_1">MM</label>
+		       </span>
+		       <span>
+			   <input id="i7_2" name="i7_2" class="text" size="2" maxlength="2" value="" type="text" /> /
+			    <label for="i7_2">DD</label>
+		      </span>
+		      <span>
+	 		   <input id="i7_3" name="i7_3" class="text" size="4" maxlength="4" value="" type="text" />
+			   <label for="i7_3">YYYY</label>
+		     </span>
+             </div>
+			   </li>		
+               <li id="item8" >
+		       <label class="description" for="i8">Description *</label>
+		      <div>
+			   <textarea id="i8" name="i8" class="textarea medium" rows="7" cols="27"></textarea>	
+		     </div> 
+		     </li>		
+			 <li class="buttons">			  		    
+			  <input id="saveSocialEventsForm" class="button_text" type="submit" name="submit" value="Submit" />
+		    </li>
+            <li class="buttons">			  		    
+			   <input id="clearSocialEventsForm" class="button_text" type="reset" name="reset" value="Clear" />
+		     </li>
+             <li id="inf5"><a href="eventstable.html">Show Events Table</a>
+            </li>
+		 </ul>
+		</form>  
+  </div>
+  
+  <div id="raceimage"><img src="images/imageTallRectangle.jpg"  height="540" width="360"  alt="Running Club Race" />
+  </div>  
+  <div>
+      <form id="editraceeventform" name="editraceeventform" method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Edit Race Event</h2>			
+		</div>					
+			<ul > 
+              <li id="item9" >
+		         <label class="description" for="i9">Choose event to edit *</label>
+                <div>
+		        <select class="select medium" id="i9" name="i9"> 
+			      <option value="" selected="selected"></option>
+                  <option value="1" >Event 1</option>
+                  <option value="2" >Event 2</option>
+                  <option value="3" >Event 3</option>
+		       </select>
+		       </div>
+              </li>               
+			  <li id="item10" >
+		         <label class="description" for="i10">Title </label>
+		         <div>
+                 	<textarea id="i10" name="i10" class="textarea medium" rows="4" cols="27"></textarea>		       
+		         </div> 
+		       </li>		
+               <li id="item11" >
+		        <label class="description" for="i11">Location </label>
+		        <div>
+			        <textarea id="i11" name="i11" class="textarea medium" rows="4" cols="27"></textarea>	
+		        </div> 
+		       </li>		
+               <li id="item12" >
+		        <label class="description" for="i12_1">Date </label>
+                <div>
+		        <span>
+			    <input id="i12_1" name="i12_1" class="text" size="2" maxlength="2" value="" type="text" /> /
+			     <label for="i12_1">MM</label>
+		       </span>
+		       <span>
+			   <input id="i12_2" name="i12_2" class="text" size="2" maxlength="2" value="" type="text" /> /
+			    <label for="i12_2">DD</label>
+		      </span>
+		      <span>
+	 		   <input id="i12_3" name="i12_3" class="text" size="4" maxlength="4" value="" type="text" />
+			   <label for="i12_3">YYYY</label>
+		     </span>
+             </div>
+			   </li>		
+               <li id="item13" >
+		       <label class="description" for="i13">Google Map Reference </label>
+		      <div>
+			   <textarea id="i13" name="i13" class="textarea medium" rows="7" cols="27">http://</textarea>	
+		     </div> 
+		     </li>		
+			 <li class="buttons">			  		    
+			  <input id="saveEditRaceEventsForm" class="button_text" type="submit" name="submit" value="Submit" />
+		    </li>
+            <li class="buttons">			  		    
+			   <input id="clearEditRaceEventsForm" class="button_text" type="reset" name="reset" value="Clear" />
+		    </li>
+            <li id="inf6"><a href="eventstable.html">Show Events Table</a>
+            </li>
+		 </ul>
+		</form>    
+       </div>
+           
+    </div>
+  <div id="footer"> &copy; 2012 OURC Admin</div>
+</div> 
+
+</body>
+</html>

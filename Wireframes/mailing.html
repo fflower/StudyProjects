@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Manage Members OURC Admin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="display.css" rel="stylesheet" type= "text/css" />                                     
+</head>
+<body>
+<div id="container">
+   <div id="banner">
+    <h2>OURC Administration Panel</h2>
+    <ul id="bannerlist">
+       <li>Member's Name/</li>      
+      <li id="log"><a href="index.html">Log out</a></li>    
+      <li><input type="text" title="Search" /></li>
+      <li><a href="">Search</a></li>       
+    </ul>    
+  </div>   
+  <div id="navcontainer">
+    <ul id="navlist">      
+     <li><a href="home.html">Home</a></li>
+      <li><a href="events.html">Manage Events</a></li>
+      <li><a href="members.html">Manage Members &amp; Results</a></li>
+      <li><a href="news.html">Manage News</a></li>
+      <li><a href="" id="current">Manage Mailings</a></li>      
+    </ul>
+  </div>     
+  <div id="content"> 
+  <div id="sidenav">
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="events.html">Add Race Event</a></li>
+        <li><a href="events.html">Add Social Event</a></li>
+        <li><a href="events.html">Edit Race Event</a></li>
+        <li><a href="members.html">Edit Race Results</a></li>
+        <li><a href="news.html">Add News Item</a></li>
+        <li><a href="members.html">Add New Member</a></li>
+        <li><a href="members.html">Delete Member</a></li>
+      </ul>
+    </div> 
+      
+  <div>
+      <form id="sendemailform" name="sendemailform"  method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+      <div class="description_form">
+			<h2>Send Email</h2>			
+		</div>					
+			<ul > 
+              <li id="elem1" >
+		         <label class="description" for="el1">Choose Recipient/Recipients </label>
+                <div>
+		        <select class="select medium" id="el1" name="el1"> 
+			      <option value="" selected="selected"></option>
+                  <option value="1" >All Members Given Their Prior Consent</option>
+                  <option value="2" >First Member</option>
+                  <option value="3" >Second Member</option>
+		       </select>
+		       </div>
+              </li>               
+			  <li id="elem2" >
+		         <label class="description" for="el2">Sender</label>
+		         <div>
+                 	<p id="el2">Open University Running Club</p>		       
+		         </div> 
+		       </li>		
+               <li id="elem3" >
+		        <label class="description" for="el3">OURC Email </label>
+		        <div>
+			     <input id="el3" name="el3" class="text" size="2" maxlength="2" value="Aliquam justo @nunc" type="text" />  	
+		        </div> 
+		       </li>		
+               <li id="elem4" >
+		        <label class="description" for="el4_1">Date to send </label>
+                <div>
+		        <span>
+			    <input id="el4_1" name="el4_1" class="text" size="2" maxlength="2" value="" type="text" /> /
+			     <label for="el4_1">DD</label>
+		       </span>
+		       <span>
+			   <input id="el4_2" name="el4_2" class="text" size="2" maxlength="2" value="" type="text" /> /
+			    <label for="el4_2">MM</label>
+		      </span>
+		      <span>
+	 		   <input id="el4_3" name="el4_3" class="text" size="4" maxlength="4" value="" type="text" />
+			   <label for="el4_3">YYYY</label>
+		     </span>
+             </div>
+			   </li>
+               <li id="elem5">
+               <label for='el5' >Upload the attachment:</label>
+               <div>
+               <input type="file" name='el5' id='el5' />                
+               </div>
+               </li>
+               <li id="elem6" >
+		        <label class="description" for="el6">Title </label>
+		        <div>
+			     <input id="el6" name="el6" class="text" size="2" maxlength="2" value="" type="text" />  	
+		        </div> 
+		       </li>
+               <li id="elem7" >
+		         <label class="description" for="el7">Message</label>
+		         <div>
+                 	<textarea id="el7" name="el6"  class="textarea medium" rows="16" cols="66"></textarea>		       
+		         </div> 
+		        </li>	             
+               	
+			 <li class="buttons">			  		    
+			  <input id="saveMailForm" class="button_text" type="submit" name="submit" value="Send" />
+             </li>
+             <li class="buttons">			  		    
+			  <input id="clearMailForm" class="button_text" type="reset" name="Clear" value="Clear" />
+             </li>
+		 </ul>
+		</form>    
+       </div>
+           
+    </div>
+  <div id="footer"> &copy; 2012 OURC Admin</div>
+</div> 
+
+</body>
+</html>
